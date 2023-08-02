@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void calculate_prefix_sum(int arr[], int prefixSum[], int n) {
+void prefix_sum(int arr[], int prefixSum[], int n) {
     prefixSum[0] = arr[0];
 
     // Calculate the prefix sum for the rest of the elements
@@ -23,7 +23,7 @@ int main() {
     }
 
     // Calculate the prefix sum
-    calculate_prefix_sum(arr, prefixSum, n);
+    prefix_sum(arr, prefixSum, n);
 
     printf("Output Array (Prefix Sum): ");
     for (int i = 0; i < n; i++) {
