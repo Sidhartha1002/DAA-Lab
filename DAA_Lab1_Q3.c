@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void find_duplicate_elements(int arr[], int n, int *total_duplicates, int *most_repeating_element) {
+void duplicate_elements(int arr[], int n, int *total_duplicates, int *most_repeating_element) {
     int freq[100] = {0}; // Assuming values are between 0 and 99
 
     *total_duplicates = 0;
@@ -45,7 +45,7 @@ int main() {
 
     // Find the total number of duplicate elements and the most repeating element in the array
     int total_duplicates, most_repeating_element;
-    find_duplicate_elements(arr, n, &total_duplicates, &most_repeating_element);
+    duplicate_elements(arr, n, &total_duplicates, &most_repeating_element);
 
     printf("Total number of duplicate values = %d\n", total_duplicates);
     printf("The most repeating element in the array = %d\n", most_repeating_element);
